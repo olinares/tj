@@ -1,0 +1,85 @@
+---
+layout: default
+title: Computer Services
+section_id: services
+services:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color:
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+  -
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+    - title: Web design
+      icon: layout
+      desc:
+        Accusamus laborum totam omnis inventore et error aut et eos aut. fuga mollitia vitae id enim omnis perspiciatis. modi maxime eos.
+      color: yellow
+---
+
+<div class='full'>
+  <div class='row'>
+    <div class='special-title centered-text'>
+      <i class='icon-help-circled'></i>
+      <h2>Computer services</h2>
+      <p>Affordable Tech Support To Your Door</p>
+      <p class='shortline'></p>
+    </div>
+    <div class='two spacing'></div>
+    <div id="my-store-91308"></div>
+    <div>
+      <script type="text/javascript" src="https://app.ecwid.com/script.js?91308&data_platform=code&data_date=2016-06-08" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(3,3) list(10) table(20)","categoryView=grid","searchView=list","id=my-store-91308");</script></div>
+    </div>
+  </div>
+
+  {% for row in page.services %}
+    <div class="row">
+      {% for service in row %}
+        <div class='medium-4 large-4 columns icon-text'>
+          <i class='icon-{{service.icon}} {{service.color}}'></i>
+          <h3>{{service.title}}</h3>
+          <p>{{service.desc}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    {% unless forloop.last %}
+      <div class="spacing"></div>
+    {% endunless %}
+  {% endfor %}
+</div>
