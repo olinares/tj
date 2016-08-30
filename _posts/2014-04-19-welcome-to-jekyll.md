@@ -1,7 +1,7 @@
 ---
+title: Welcome to Jekyll!
+date: 2014-04-19 16:49:53 Z
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-04-19 16:49:53
 author: jekyll
 ---
 
